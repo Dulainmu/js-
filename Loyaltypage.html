@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROCIES - HOME</title>
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="Css.css">
+    <script src="https://kit.fontawesome.com/f348914ef2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+        <div class="logo">
+            <span>GROCIES SUPERMARKET</span>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Dairypage.html">Dairy Products</a></li>
+                <li><a href="Vegetables.html">Vegetables</a></li>
+                <li><a href="SkincarePage.html">Cosmetics and Skin care products</a></li>
+                <li><a href="Checkout.html">Order</a></li>
+                <li><a href="Loyaltypage.html">Loyalty registration</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="Checkout.html">
+            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+            </a>
+            <a href="Loyaltypage.html">
+            <i class="fa-regular fa-user fa-2x"></i>
+            </a>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <br><br><br><br>
+        <main>
+            <div class="container">
+                <h1>Welcome to Our Supermarket Loyalty Program!</h1>
+                <p>Join our loyalty program today and start earning rewards on every purchase. Choose the scheme that suits you best and enjoy exclusive benefits!</p>
+    
+                <form action="/submit_registration" method="post">
+                    <h2>Registration Form</h2>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+    
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+    
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+    
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+    
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="state" required>
+    
+                    <label for="zip">ZIP Code:</label>
+                    <input type="text" id="zip" name="zip" required>
+    
+                    <h2>Choose Your Loyalty Scheme</h2>
+                    <div class="radio-group">
+                        <input type="radio" id="basic" name="loyaltiescheme" value="basic" required>
+                        <label for="basic">Basic Loyalty Scheme</label><br>
+                        
+                        <input type="radio" id="silver" name="loyaltiescheme" value="silver">
+                        <label for="silver">Silver Loyalty Scheme</label><br>
+                        
+                        <input type="radio" id="gold" name="loyaltiescheme" value="gold">
+                        <label for="gold">Gold Loyalty Scheme</label><br>
+                    </div>
+    
+                    <h2>Create a Password</h2>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+    
+                    <label for="confirmpassword">Confirm Password:</label>
+                    <input type="password" id="confirmpassword" name="confirmpassword" required>
+    
+                    <h2>Communication Preferences</h2>
+                    <input type="checkbox" id="promoemails" name="promoemails">
+                    <label for="promoemails">I would like to receive promotional emails and newsletters.</label><br>
+                    
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the terms and conditions.</label><br>
+    
+                    <input type="submit" value="Submit Registration">
+                </form>
+    
+                <div class="benefits">
+                    <h2>Benefits of Our Loyalty Schemes</h2>
+                    <h3>Basic Loyalty Scheme</h3>
+                    <p>Earn 1 point for every $1 spent.<br>
+                    Exclusive monthly discounts.<br>
+                    Early access to sales.</p>
+    
+                    <h3>Silver Loyalty Scheme</h3>
+                    <p>Earn 1.5 points for every $1 spent.<br>
+                    All benefits of Basic Scheme.<br>
+                    Special birthday offer.<br>
+                    Free delivery on orders over $50.</p>
+    
+                    <h3>Gold Loyalty Scheme</h3>
+                    <p>Earn 2 points for every $1 spent.<br>
+                    All benefits of Silver Scheme.<br>
+                    Priority customer service.<br>
+                    Free delivery on all orders.<br>
+                    Access to exclusive events and promotions.</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2>GROCIES SUPERMARKET</h2>
+                    <p>Your one-stop shop for fresh groceries, natural cosmetics, and more. Dedicated to providing the best quality products with exceptional customer service.</p>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Dairypage.html">Dairy Products</a></li>
+                        <li><a href="Vegetables.html">Vegetables & Fruits Page</a></li>
+                        <li><a href="SkincarePage.html">Cosmetics and Skin care products</a></li>
+                        <li><a href="Checkout.html">Order</a></li>
+                        <li><a href="Loyaltypage.html">Loyalty registration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 ,Main Street, Panadura</li>
+                        <li><i class="fas fa-phone"></i> 0725225063</li>
+                        <li><i class="fas fa-envelope"></i> dulainmu@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 GROCIES. All rights reserved.
+            </div>
+        </footer>
+      <script src="script.js"></script>
+    </body>
+</html>
