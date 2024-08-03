@@ -1,0 +1,33 @@
+
+[
+    {
+        "id": "1",
+        "name": "Olive Oil",
+        "price": "400"
+    },
+    {
+        "id": "2",
+        "name": "Salt",
+        "price": "80"
+    },
+    {
+        "id": "3",
+        "name": "Pepper Powder",
+        "price": "280"
+    },
+    {
+        "id": "4",
+        "name": "Sugar Icing",
+        "price": "750"
+    },
+    {
+        "id": "5",
+        "name": "Vanilla",
+        "price": "120"
+    },
+    {
+        "id": "6",
+        "name": "Whipping Cream",
+        "price": "900"
+    }
+]

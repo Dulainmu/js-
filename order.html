@@ -3,112 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order</title>
+    <title>GROCIES - HOME</title>
+    <link rel="icon" href="logo.jpg">
     <link rel="stylesheet" href="Css.css">
+    <script src="https://kit.fontawesome.com/f348914ef2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>GROCIES - HOME</title>
-        <link rel="icon" href="logo.jpg">
-        <link rel="stylesheet" href="Css.css">
-        <script src="https://kit.fontawesome.com/f348914ef2.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-    <header>
-            <div class="logo">
-                <span>GROCIES SUPERMARKET</span>
-            </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Dairypage.html">Dairy Products</a></li>
-                    <li><a href="Vegetables.html">Vegetables & Fruites</a></li>
-                    <li><a href="SkincarePage.html">Cosmetics and Skin care products</a></li>
-                    <li><a href="Checkout.html">Order</a></li>
-                    <li><a href="Loyaltypage.html">Loyalty registration</a></li>
-                    <li><a href="order.html">Order</a></li>
-    
-                </ul>
-            </nav>
-            <div class="icons">
-                <a href="Checkout.html">
-                <i class="fa-solid fa-cart-shopping fa-2x"></i>
-                </a>
-                <a href="Loyaltypage.html">
-                <i class="fa-regular fa-user fa-2x"></i>
-                </a>
-            </div>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </header>
-        <hr>
-    <br><br><br><br><br>
-    <main>
-        <div id="cart-items" class="cart-items"></div>
-        <div id="cart-total" class="cart-total"></div>
-        <button id="place-order" class="place-order-btn">Place Order</button>
-    </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            const cartItemsContainer = document.getElementById('cart-items');
-            const cartTotalContainer = document.getElementById('cart-total');
+<header>
+    <div class="logo">
+        <span>GROCIES SUPERMARKET</span>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Dairypage.html">Dairy Products</a></li>
+            <li><a href="Vegetables.html">Vegetables & Fruits Page</a></li>
+            <li><a href="SkincarePage.html">Cosmetics and Skin care products</a></li>
+            <li><a href="Checkout.html">Order</a></li>
+        </ul>
+    </nav>
+    <div class="sign-in">
+        <a href="Signin.html"><i class="fa-regular fa-user"></i>Sign In</a>
+    </div>
+</header>
+<main>
+    <section class="searchbar">
+        <form>
+            <input type="text" placeholder="Search...">
+            <button type="submit">GO</button>
+        </form>
+    </section>
 
-            function displayCart() {
-                cartItemsContainer.innerHTML = '';
-                let total = 0;
+    <section class="cartpage">
+        <div class="cart_body">
+            <div class="cart">
+                <div class="cart-header">
+                    <h1>Your Shopping Cart</h1>
+                </div>
 
-                cart.forEach(item => {
-                    const itemTotal = item.price * item.quantity;
-                    total += itemTotal;
+                <!-- Vegetable Products Dropdown -->
+                <div class="product-selection">
+                    <label for="vegetable-dropdown">Select a Vegetable:</label>
+                    <select id="vegetable-dropdown"></select>
+                    <label for="vegetable-quantity">Quantity:</label>
+                    <input type="number" id="vegetable-quantity" value="1" min="1">
+                    <button id="add-vegetable-to-cart-btn">Add to Cart</button>
+                </div>
 
-                    const itemElement = document.createElement('div');
-                    itemElement.classList.add('cart-item');
-                    itemElement.innerHTML = `
-                        <p>${item.name} - ${item.quantity} x Rs ${item.price} = Rs ${itemTotal}</p>
-                        <button class="remove-from-cart-btn" data-id="${item.id}">Remove</button>
-                    `;
-                    cartItemsContainer.appendChild(itemElement);
-                });
+                <!-- Baking Products Dropdown -->
+                <div class="product-selection">
+                    <label for="baking-product-dropdown">Select a Baking Product:</label>
+                    <select id="baking-product-dropdown"></select>
+                    <label for="baking-quantity">Quantity:</label>
+                    <input type="number" id="baking-quantity" value="1" min="1">
+                    <button id="add-baking-to-cart-btn">Add to Cart</button>
+                </div>
 
-                cartTotalContainer.innerHTML = `<p>Total: Rs ${total}</p>`;
-            }
+                <!-- Dairy Products Dropdown -->
+                <div class="product-selection">
+                    <label for="dairy-product-dropdown">Select a Dairy Product:</label>
+                    <select id="dairy-product-dropdown"></select>
+                    <label for="dairy-quantity">Quantity:</label>
+                    <input type="number" id="dairy-quantity" value="1" min="1">
+                    <button id="add-dairy-to-cart-btn">Add to Cart</button>
+                </div>
 
-            document.getElementById('place-order').addEventListener('click', function() {
-                if (cart.length === 0) {
-                    alert('Your cart is empty.');
-                    return;
-                }
+                <!-- Meat Products Dropdown -->
+                <div class="product-selection">
+                    <label for="meat-product-dropdown">Select a Meat Product:</label>
+                    <select id="meat-product-dropdown"></select>
+                    <label for="meat-quantity">Quantity:</label>
+                    <input type="number" id="meat-quantity" value="1" min="1">
+                    <button id="add-meat-to-cart-btn">Add to Cart</button>
+                </div>
+
+                <!-- Fruit Products Dropdown -->
+                <div class="product-selection">
+                    <label for="fruit-dropdown">Select a Fruit:</label>
+                    <select id="fruit-dropdown"></select>
+                    <label for="fruit-quantity">Quantity:</label>
+                    <input type="number" id="fruit-quantity" value="1" min="1">
+                    <button id="add-fruit-to-cart-btn">Add to Cart</button>
+                </div>
+
+
+
+                <!-- Cart Table -->
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Cart items will be dynamically populated here -->
+                    </tbody>
+                </table>
+                <div id="cart-total">Total: Rs 0.00</div>
                 
-                localStorage.removeItem('cart');
-                alert('Order placed successfully!');
-                displayCart();
-            });
+            <div>
+                <button id="add-to-favorites-btn"  class="add-to-cart">Add to Favorites cart</button>
+                <button id="show-favorites-btn"  class="add-to-cart">upload favorites cart</button>
+                <button id="hide-favorites-btn"  class="add-to-cart">delete favorite cart </button>
+            </div>
+            </div>
+        </div>
+    </section>
 
-            cartItemsContainer.addEventListener('click', function(event) {
-                if (event.target.classList.contains('remove-from-cart-btn')) {
-                    const id = event.target.dataset.id;
-                    removeFromCart(id);
-                }
-            });
+</main>
 
-            function removeFromCart(id) {
-                const itemIndex = cart.findIndex(item => item.id === id);
-                if (itemIndex > -1) {
-                    cart.splice(itemIndex, 1);
-                    localStorage.setItem('cart', JSON.stringify(cart));
-                    displayCart();
-                }
-            }
+<footer>
+    <!-- Footer content -->
+</footer>
 
-            displayCart();
-        });
-    </script>
+<script src="js.js"></script>
 </body>
 </html>

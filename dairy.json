@@ -1,0 +1,37 @@
+[
+    {
+        "id": "7",
+        "name": "Cheese",
+        "price": "400"
+    },
+    {
+        "id": "8",
+        "name": "Eggs",
+        "price": "62"
+    },
+    {
+        "id": "9",
+        "name": "Fresh Milk",
+        "price": "980"
+    },
+    {
+        "id": "10",
+        "name": "Yogurt",
+        "price": "75"
+    },
+    {
+        "id": "11",
+        "name": "Ice Cream",
+        "price": "120"
+    },
+    {
+        "id": "12",
+        "name": "Butter",
+        "price": "900"
+    },
+    {
+        "id": "13",
+        "name": "Milk Powder",
+        "price": "1020"
+    }
+]

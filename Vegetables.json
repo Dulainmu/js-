@@ -1,0 +1,62 @@
+[
+    {
+        "id": "20",
+        "name": "Carrot",
+        "price": "120"
+    },
+    {
+        "id": "21",
+        "name": "Cucumber",
+        "price": "200"
+    },
+    {
+        "id": "22",
+        "name": "Tomato",
+        "price": "60"
+    },
+    {
+        "id": "23",
+        "name": "Potatoes",
+        "price": "130"
+    },
+    {
+        "id": "24",
+        "name": "Cabbage",
+        "price": "130"
+    },
+    {
+        "id": "25",
+        "name": "Bell-Pepper",
+        "price": "130"
+    },
+    {
+        "id": "26",
+        "name": "Apple",
+        "price": "450"
+    },
+    {
+        "id": "27",
+        "name": "Banana",
+        "price": "155"
+    },
+    {
+        "id": "28",
+        "name": "Mango",
+        "price": "135"
+    },
+    {
+        "id": "29",
+        "name": "Watermelon",
+        "price": "100"
+    },
+    {
+        "id": "30",
+        "name": "Orange",
+        "price": "230"
+    },
+    {
+        "id": "31",
+        "name": "Buleberry",
+        "price": "800"
+    }
+]
