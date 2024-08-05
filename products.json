@@ -1,0 +1,278 @@
+{
+    "categories": [
+      {
+        "name": "Dairyproducts",
+        "products": [
+            {
+                "productid": "7",
+                "name": "Cheese",
+                "Description": "No description available",
+                "price": 400,
+                "image": "Images/cheese.jpg",
+                "quantity": 100
+            },
+            {
+                "productid": "8",
+                "name": "Eggs",
+                "Description": "No description available",
+                "price": 62,
+                "image": "Images/egg.jpg",
+                "quantity": 100
+            },
+            {
+                "productid": "9",
+                "name": "Fresh Milk",
+                "Description": "No description available",
+                "price": 980,
+                "image": "Images/milk.jpg",
+                "quantity": 100
+            },
+            {
+                "productid": "10",
+                "name": "Yogurt",
+                "Description": "No description available",
+                "price": 75,
+                "image": "Images/yogurt.jpg",
+                "quantity": 100
+            },
+            {
+                "productid": "11",
+                "name": "Ice Cream",
+                "Description": "No description available",
+                "price": 120,
+                "image": "Images/ice cream.png",
+                "quantity": 100
+            },
+            {
+                "productid": "12",
+                "name": "Butter",
+                "Description": "No description available",
+                "price": 900,
+                "image": "Images/butter.png",
+                "quantity": 100
+            },
+            {
+                "productid": "13",
+                "name": "Milk Powder",
+                "Description": "No description available",
+                "price": 1020,
+                "image": "Images/milkpowder.png",
+                "quantity": 100
+            }
+        ]
+      },
+      {
+        "name": "Vegetables",
+        "products": [
+            {
+                "productid": "20",
+                "name": "Carrot",
+                "Description": "No description available",
+                "price": 120,
+                "image": "Images/Vegetables/Carrot.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "21",
+                "name": "Cucumber",
+                "Description": "No description available",
+                "price": 200,
+                "image": "Images/Vegetables/cucumber.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "22",
+                "name": "Tomato",
+                "Description": "No description available",
+                "price": 60,
+                "image": "Images/Vegetables/Tomato.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "23",
+                "name": "Potatoes",
+                "Description": "No description available",
+                "price": 130,
+                "image": "Images/Vegetables/Potatoes.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "24",
+                "name": "Cabbage",
+                "Description": "",
+                "price": 130,
+                "image": "Images/Vegetables/cabbage.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "25",
+                "name": "Bell-Pepper",
+                "Description": "No description available",
+                "price": 130,
+                "image": "Images/Vegetables/Bell-Pepper.jpg",
+                "quantity": 0
+            }
+        ]
+      },
+      {
+        "name": "Fruits",
+        "products": [
+          {
+            "productid": "26",
+            "name": "Apple",
+            "Description": "No description available",
+            "price": 450,
+            "image": "Images/Vegetables/apple.jpg",
+            "quantity": 0
+        },
+        {
+            "productid": "27",
+            "name": "Banana",
+            "Description": "No description available",
+            "price": 155,
+            "image": "Images/Vegetables/banana.jpg",
+            "quantity": 0
+        },
+        {
+            "productid": "28",
+            "name": "Mango",
+            "Description": "",
+            "price": 135,
+            "image": "Images/Vegetables/mango.jpg",
+            "quantity": 0
+        },
+        {
+            "productid": "29",
+            "name": "Watermelon",
+            "Description": "No description available",
+            "price": 100,
+            "image": "Images/Vegetables/Watermelon.jpg",
+            "quantity": 0
+        },
+        {
+            "productid": "30",
+            "name": "Orange",
+            "Description": "No description available",
+            "price": 230,
+            "image": "Images/Vegetables/orange.jpg",
+            "quantity": 0
+        },
+        {
+            "productid": "31",
+            "name": "Blueberry",
+            "Description": "No description available",
+            "price": 800,
+            "image": "Images/Vegetables/Grapes.jpg",
+            "quantity": 0
+        }
+        ]
+      },
+      {
+        "name": "Meat",
+        "products": [
+            {
+                "productid": "14",
+                "name": "Chicken",
+                "Description": "No description available",
+                "price": 400,
+                "image": "Images/meat/chicken.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "15",
+                "name": "Beef",
+                "Description": "No description available",
+                "price": 462,
+                "image": "Images/meat/beef.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "16",
+                "name": "Meat Balls",
+                "Description": "No description available",
+                "price": 280,
+                "image": "Images/meat/meat ball.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "17",
+                "name": "Dry Fish",
+                "Description": "No description available",
+                "price": 750,
+                "image": "Images/meat/dry fish.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "18",
+                "name": "Prawn",
+                "Description": "No description available",
+                "price": 120,
+                "image": "Images/meat/prawn.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "19",
+                "name": "Cuttle Fish",
+                "Description": "No description available",
+                "price": 900,
+                "image": "Images/meat/cuttle fish.jpeg",
+                "quantity": 0
+            }
+        ]
+    },
+    {
+        "name": "Baking",
+        "products": [
+            {
+                "productid": "20",
+                "name": "Olive Oil",
+                "Description": "No description available",
+                "price": 400,
+                "image": "Images/baking/olive oil.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "21",
+                "name": "Salt",
+                "Description": "No description available",
+                "price": 80,
+                "image": "Images/baking/salt.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "22",
+                "name": "Pepper Powder",
+                "Description": "No description available",
+                "price": 280,
+                "image": "Images/baking/pepper powder.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "23",
+                "name": "Sugar Icing",
+                "Description": "No description available",
+                "price": 750,
+                "image": "Images/baking/sugar icing.jpg",
+                "quantity": 0
+            },
+            {
+                "productid": "24",
+                "name": "Vanilla",
+                "Description": "No description available",
+                "price": 120,
+                "image": "Images/baking/vanila.png",
+                "quantity": 0
+            },
+            {
+                "productid": "25",
+                "name": "Whipping Cream",
+                "Description": "No description available",
+                "price": 900,
+                "image": "Images/baking/whipping cream.jpg",
+                "quantity": 0
+            }
+        ] 
+      }
+    ]
+  }
+  

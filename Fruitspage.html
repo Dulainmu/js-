@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,43 +38,25 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
-    <br><br><br><br><br>
-    <div id="product-dropdowns">
-        <!-- Dropdown boxes will be added here -->
-        <script src="dropdown.js"></script>
-    </div>
+    <br><br><br><br><br><br>
     <main>
-        <br><br><br><br><br><br>  
-        <section class="cartpage">
-            <div class="cart_body">
-                <div class="cart">
-                    <div class="cart-header">
-                        <h1>Your Shopping Cart</h1>
-                    </div>
-                    <!-- Cart Table -->
-                    <table id="cart-table">
-                        <thead>
-                            <tr>
-                                <th>Product Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Total</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!-- Rows will be dynamically added here -->
-                        </tbody>
-                    </table>
-                    <div id="cart-total">Total: Rs 0.00</div>
-                    <button id="save-favorite-btn">Add to Favourites</button>
-                    <button id="apply-favorite-btn">Apply Favourites</button>
-                    <button id="clear-cart-btn" class="add-to-cart">Clear Cart</button>
-                    
-                </div>
+        <section>
+            <div class="daily_header">
+                <h1 id="category">Fruits</h1>
             </div>
+            <br>       
+        </section>
+
+        <section>
+            <p class="maintext">"Enjoy the sweet and juicy flavors of fresh fruits."</p>
+        </section>
+        <br><br> 
+
+        <section>
+            <div class="products" id="product-list"></div>
         </section>
     </main>
+    <br><br>
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
@@ -112,8 +95,6 @@
         </div>
     </footer>
 
-
- 
- <script src="Orderpg.js"></script>
+    <script src="Order.js"></script> 
 </body>
 </html>

@@ -591,7 +591,8 @@ footer {
 }
 
 .add-to-cart-btn:hover {
-    background-color: white;
+    background-color: black;
+    color: white;
     transform: scale(1.05);
 }
   
@@ -738,6 +739,9 @@ footer {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
+    margin: 10px;
+    width: 220px;
+    height: 390px;
     background-color: #fff;
     text-align: center;
     transition: transform 0.5s, background 0.5s;
@@ -1032,8 +1036,17 @@ input[type="submit"]:hover {
 
 /*order page*/
 
+.order-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
 .cart-items {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .cart-item {
@@ -1046,6 +1059,7 @@ input[type="submit"]:hover {
 
 .cart-item p {
     margin: 0;
+    font-size: 1.1em;
 }
 
 .remove-from-cart-btn {
@@ -1054,6 +1068,8 @@ input[type="submit"]:hover {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 .remove-from-cart-btn:hover {
@@ -1061,19 +1077,213 @@ input[type="submit"]:hover {
 }
 
 .cart-total {
-    margin: 20px 0;
-    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-size: 1.5em;
     font-weight: bold;
+    text-align: right;
 }
 
 .place-order-btn {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 30px;
     cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 .place-order-btn:hover {
     background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    header .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .hamburger .fas {
+        font-size: 1.5em;
+    }
+
+    .order-page {
+        padding: 10px;
+    }
+
+    .place-order-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+#oliveoil{
+    background: url(Images/baking/olive\ oil.jpg);
+    background-size: cover;
+}
+
+#pepperpwder{
+    background: url(Images/baking/pepper\ powder.jpg);
+    background-size: cover;
+}
+
+#salt{
+    background: url(Images/baking/salt.jpg);
+    background-size: cover;
+}
+
+#sugaricing{
+    background: url(Images/baking/sugar\ icing.jpg);
+    background-size: cover;
+}
+
+#vanila{
+    background: url(Images/baking/vanila.png);
+    background-size: cover;
+}
+
+#whippingcream{
+    background: url(Images/baking/whipping\ cream.jpg);
+    background-size: cover;
+}
+
+#beef{
+    background: url(Images/meat/beef.jpg);
+    background-size: cover;
+}
+
+#chicken{
+    background: url(Images/meat/chicken.jpg);
+    background-size: cover;
+}
+
+#meatball{
+    background: url(Images/meat/meat\ ball.jpg);
+    background-size: cover;
+}
+
+#cuttlefish{
+    background: url(Images/meat/cuttle\ fish.jpeg);
+    background-size: cover;
+}
+
+#dryfish{
+    background: url(Images/meat/dry\ fish.jpg);
+    background-size: cover;
+}
+
+#prawn{
+    background: url(Images/meat/prawn.jpg);
+    background-size: cover;
+}
+
+.daily_header {
+    text-align: center;
+}
+
+.maintext {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.daily_product_h_w{
+    height: 150px;
+    width: 170px;
+}
+
+/* Dropdown Box Container */
+#product-dropdowns {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Category Dropdown */
+.category-dropdown {
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.category-dropdown:last-child {
+    border-bottom: none;
+}
+
+/* Dropdown Label */
+.category-dropdown label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Product Dropdown */
+.product-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+}
+
+.product-dropdown:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Product Details */
+.product-details {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0 20px 0 0;
+}
+
+.add-to-cart-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #0056b3;
 }

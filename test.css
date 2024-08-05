@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.listProduct, .listCart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listProduct .item, .listCart .item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.icon-cart {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    background: white;
+    transition: right 0.3s;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.cart.show {
+    right: 0;
+}
+
+.close {
+    background: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
